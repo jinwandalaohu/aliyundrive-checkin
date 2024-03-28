@@ -1,11 +1,11 @@
 import os
-import re
 import argparse
-from aliyundrive import Aliyundrive
-from message_send import MessageSend
+import aliyun_checkin
+import ikuuu_checkin
+import message_send
 
 
-def main():
+def parse_args() -> dict:
     parser = argparse.ArgumentParser()
     parser.add_argument('--token_string', type=str, required=True)
     args = parser.parse_args()
@@ -17,6 +17,10 @@ def main():
     weCom_webhook = os.environ.get('WECOM_WEBHOOK')
     bark_deviceKey = os.environ.get('BARK_DEVICEKEY')
     feishu_deviceKey = os.environ.get('FEISHU_DEVICEKEY')
+    ikuuu_email = os.environ.get('EMAIL')
+    # 配置用户名对应的密码 和上面的email对应上
+    ikuuu_passwd = os.environ.get('IKUUU_PASSWD')
+    # server酱
 
     message_tokens = {
         'pushplus_token': pushplus_token,
@@ -25,28 +29,26 @@ def main():
         'weCom_webhook': weCom_webhook,
         'bark_deviceKey': bark_deviceKey,
         'feishu_deviceKey': feishu_deviceKey,
+        'token_string': token_string,
+        'ikuuu_email': ikuuu_email,
+        'ikuuu_passwd': ikuuu_passwd
     }
-
-    token_string = token_string.split(',')
-    ali = Aliyundrive()
-    message_all = []
-
-    for idx, token in enumerate(token_string):
-        result = ali.aliyundrive_check_in(token)
-        message_all.append(str(result))
-
-        if idx < len(token_string) - 1:
-            message_all.append('--')
-
-    title = '阿里云盘签到结果'
-    message_all = '\n'.join(message_all)
-    message_all = re.sub('\n+', '\n', message_all).rstrip('\n')
-
-    message_send = MessageSend()
-    message_send.send_all(message_tokens, title, message_all)
-
-    print('finish')
+    return message_tokens
 
 
 if __name__ == '__main__':
-    main()
+    message_toke = parse_args()
+    ali_content = aliyun_checkin.check_in(message_toke)
+    ikuuu_content = ikuuu_checkin.check_in(message_toke)
+
+    message_all = f"""
+[阿里网盘签到]
+{ali_content}
+    
+[ikuuu签到]
+{ikuuu_content}
+    """
+    print(message_all)
+    send = message_send.MessageSend()
+    send.send_all(message_toke, "签到信息", message_all)
+

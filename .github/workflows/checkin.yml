@@ -1,14 +1,11 @@
-name: aliyundrive-checkin
+name: my_check_in
 on:
   schedule:
   - cron: 0 16 * * *
   workflow_dispatch:
 
-permissions:
-  contents: read
-  
 jobs:
-  build:
+  checkin:
     runs-on: ubuntu-latest
     steps:
       - name: Detection Code
@@ -38,4 +35,6 @@ jobs:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
           BARK_DEVICEKEY: ${{ secrets.BARK_DEVICEKEY }}
           FEISHU_DEVICEKEY: ${{ secrets.FEISHU_DEVICEKEY }}
+          EMAIL: ${{ secrets.EMAIL }}
+          IKUUU_PASSWD: ${{ secrets.IKUUU_PASSWD }}
       - uses: gautamkrishnar/keepalive-workflow@master
