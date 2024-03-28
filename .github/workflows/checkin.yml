@@ -1,7 +1,7 @@
 name: my_check_in
 on:
   schedule:
-  - cron: 0 16 * * *
+  - cron: 0 22 * * *
   workflow_dispatch:
 
 jobs:
@@ -25,6 +25,10 @@ jobs:
       - name: Install requirements
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Random sleep
+        if: github.event_name == 'schedule'
+        run: sleep $(shuf -i 10-100 -n 1)
           
       - name: Run checkin
         run: |
