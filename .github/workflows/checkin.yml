@@ -42,4 +42,5 @@ jobs:
           FEISHU_DEVICEKEY: ${{ secrets.FEISHU_DEVICEKEY }}
           EMAIL: ${{ secrets.EMAIL }}
           IKUUU_PASSWD: ${{ secrets.IKUUU_PASSWD }}
+      -  uses: stefanzweifel/git-auto-commit-action@v5
       - uses: gautamkrishnar/keepalive-workflow@master
