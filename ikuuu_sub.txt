@@ -1,0 +1,187 @@
+log-level: info
+mixed-port: 7890
+proxies:
+- alterId: '1'
+  cipher: auto
+  name: 免费-日本1-Ver.6
+  port: '21584'
+  server: 4bi2s-g04.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ee4a6cc-9514-3a38-9e33-bb3dd6357383
+- alterId: '1'
+  cipher: auto
+  name: 免费-日本2-Ver.7
+  port: '11776'
+  server: xqbtt-g04.jp02-9a99-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6ee4a6cc-9514-3a38-9e33-bb3dd6357383
+- alterId: '1'
+  cipher: auto
+  name: 免费-日本3-Ver.6
+  port: '21584'
+  server: do7mo-g04.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ee4a6cc-9514-3a38-9e33-bb3dd6357383
+- alterId: '1'
+  cipher: auto
+  name: 免费-日本4-Ver.7
+  port: '447'
+  server: 4tavq-g04.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6ee4a6cc-9514-3a38-9e33-bb3dd6357383
+- alterId: '1'
+  cipher: auto
+  name: 免费-日本5-Ver.8
+  port: '46485'
+  server: ayzfb-g04.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6ee4a6cc-9514-3a38-9e33-bb3dd6357383
+- alterId: '1'
+  cipher: auto
+  name: 免费-日本6-Ver.7
+  port: '28786'
+  server: nuojj-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ee4a6cc-9514-3a38-9e33-bb3dd6357383
+proxy-groups:
+- name: PROXY
+  proxies:
+  - url_test
+  - 免费-日本1-Ver.6
+  - 免费-日本2-Ver.7
+  - 免费-日本3-Ver.6
+  - 免费-日本4-Ver.7
+  - 免费-日本5-Ver.8
+  - 免费-日本6-Ver.7
+  type: select
+- interval: 1800
+  name: url_test
+  proxies:
+  - 免费-日本1-Ver.6
+  - 免费-日本2-Ver.7
+  - 免费-日本3-Ver.6
+  - 免费-日本4-Ver.7
+  - 免费-日本5-Ver.8
+  - 免费-日本6-Ver.7
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+rule-providers:
+  apple:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/apple.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+  applications:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/applications.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  cncidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/cncidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+  direct:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/direct.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  gfw:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/gfw.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+  google:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/google.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+  greatfire:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/greatfire.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt
+  icloud:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/icloud.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+  lancidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/lancidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+  private:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/private.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+  proxy:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/proxy.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+  reject:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/reject.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+  telegramcidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/telegramcidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+  tld-not-cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/tld-not-cn.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+rules:
+- DOMAIN-KEYWORD,steamcdn,DIRECT
+- DOMAIN-SUFFIX,pixiv.net,PROXY
+- DOMAIN-SUFFIX,steamcommunity.com,PROXY
+- DOMAIN-SUFFIX,steampowered.com,DIRECT
+- DOMAIN-KEYWORD,cloudflare.com,DIRECT
+- DOMAIN,bing.com,DIRECT
+- DOMAIN,developer.mozilla.org,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- RULE-SET,applications,DIRECT
+- RULE-SET,private,DIRECT
+- RULE-SET,reject,REJECT
+- RULE-SET,icloud,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,proxy,PROXY
+- RULE-SET,direct,DIRECT
+- RULE-SET,lancidr,DIRECT
+- RULE-SET,cncidr,DIRECT
+- RULE-SET,telegramcidr,PROXY
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,PROXY

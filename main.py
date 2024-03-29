@@ -39,7 +39,7 @@ def parse_args() -> dict:
 if __name__ == '__main__':
     message_toke = parse_args()
     ali_content = aliyun_checkin.check_in(message_toke)
-    ikuuu_content = ikuuu_checkin.check_in(message_toke)
+    ikuuu_content = ikuuu_checkin.clash_checkin(message_toke)
 
     message_all = f"""
 [阿里网盘签到]
@@ -49,6 +49,6 @@ if __name__ == '__main__':
 {ikuuu_content}
     """
     print(message_all)
-    # send = message_send.MessageSend()
-    # send.send_all(message_toke, "签到信息", message_all)
+    send = message_send.MessageSend()
+    send.send_all(message_toke, "签到信息", message_all)
 
