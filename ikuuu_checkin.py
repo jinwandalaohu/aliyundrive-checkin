@@ -1,3 +1,6 @@
+import random
+import time
+
 import requests, traceback
 from bs4 import BeautifulSoup
 import base64, json, yaml
@@ -28,6 +31,7 @@ success = 'OK'
 
 def clash_checkin(message_token: dict):
     session = login_in_ikuuu(message_token)
+    time.sleep(random.randint(5, 10))
     content = check_in(session)
     all_node_list = []
     all_node_list.extend(grab_subscribe(session))
@@ -141,7 +145,8 @@ def build_sub_yaml(node_dict_list: list[dict]):
         name_dict[ps_name] = name_dict[ps_name] + 1
         if name_dict[ps_name] > 1:
             ps_name = ps_name + "-" + str(name_dict[ps_name] - 1)
-        host = server["add"] if server.get("host") is None or server.get("host") == '' or server.get("host") == 'null' else server.get("host")
+        host = server["add"] if server.get("host") is None or server.get("host") == '' or server.get(
+            "host") == 'null' else server.get("host")
         proxy = {"name": ps_name, "type": "vmess", "server": host, "port": server["port"],
                  "uuid": server["id"], "alterId": server["aid"], "cipher": "auto",
                  "tls": True if server['tls'] else False, "udp": True}
