@@ -5,7 +5,7 @@ proxies:
   cipher: auto
   name: 免费-日本1-Ver.6
   port: '21584'
-  server: v3n9t-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: 8ob00-g04.jp01-0986-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   udp: true
@@ -14,7 +14,7 @@ proxies:
   cipher: auto
   name: 免费-日本2-Ver.7
   port: '11776'
-  server: c87pa-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: e1eu8-g04.jp02-9a99-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   udp: true
@@ -23,7 +23,7 @@ proxies:
   cipher: auto
   name: 免费-日本3-Ver.6
   port: '21584'
-  server: onbh8-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: rujk9-g04.jp03-7d22-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   udp: true
@@ -32,7 +32,7 @@ proxies:
   cipher: auto
   name: 免费-日本4-Ver.7
   port: '447'
-  server: milnp-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: ipvyh-g04.jp04-3771-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   udp: true
@@ -41,7 +41,7 @@ proxies:
   cipher: auto
   name: 免费-日本5-Ver.8
   port: '46485'
-  server: zgdjw-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: krkhk-g04.jp05-6786-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   udp: true
@@ -50,7 +50,7 @@ proxies:
   cipher: auto
   name: 免费-日本6-Ver.7
   port: '28786'
-  server: qo6n7-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 2izbx-g04.jp06-7c5a-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   udp: true
