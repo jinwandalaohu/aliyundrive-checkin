@@ -33,10 +33,11 @@ def clash_checkin(message_token: dict):
     session = login_in_ikuuu(message_token)
     time.sleep(random.randint(5, 10))
     content = check_in(session)
-    all_node_list = []
-    all_node_list.extend(grab_subscribe(session))
+    # all_node_list = []
+    # all_node_list.extend(grab_subscribe(session))
     # all_node_list.extend(grab_free_server_list())
-    build_sub_yaml(all_node_list)
+    # build_sub_yaml(all_node_list)
+    get_ikuuu_sub_yaml()
     return content
 
 
@@ -161,9 +162,28 @@ def build_sub_yaml(node_dict_list: list[dict]):
         yaml.dump(yaml_object, file, encoding="utf-8", allow_unicode=True)
 
 
+def get_ikuuu_sub_yaml():
+    """
+    获取ikuuu的订阅文件， 添加支持url-test的组，然后保存到本地供订阅使用
+    :return:
+    """
+    url = 'https://daev4.no-mad-world.club/link/eyOYma0OzTLXLYbl?clash=3&extend=1'
+    yaml_conf = requests.get(url).text
+    # 将 yaml_conf 转换为 yaml 对象
+    yaml_object = yaml.load(yaml_conf, Loader=yaml.FullLoader)
+    autoselect_group = {"name": "auto_select", "type": "url-test", 'interval': 1800,
+                        'url': 'http://cp.cloudflare.com/generate_204',
+                        "proxies": [x.get('name') for x in yaml_object['proxies']]}
+    yaml_object['proxy-groups'][0]['proxies'].append('auto_select')
+    yaml_object['proxy-groups'].append(autoselect_group)
+    with open("ikuuu_sub.yaml", "w", encoding="utf-8") as file:
+        yaml.dump(yaml_object, file, encoding="utf-8", allow_unicode=True)
+
+
 if __name__ == '__main__':
     # clash_checkin({'ikuuu_email': 'wanghe6363@gmail.com', 'ikuuu_passwd': 'QHUY%$#gyf675'})
     # get_free_server_list()
     # name_dict = defaultdict(int)
     # name_dict['name'] = name_dict['name'] + 1
+    get_ikuuu_sub_yaml()
     pass
