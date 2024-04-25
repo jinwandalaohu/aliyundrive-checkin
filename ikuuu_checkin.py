@@ -138,7 +138,7 @@ def build_sub_yaml(node_dict_list: list[dict]):
     proxy_group = {'name': "PROXY", "type": "select", "proxies": []}
     proxy_group["proxies"].append("url_test")
     proxy_group_1 = {'name': "url_test", "type": "url-test", "url": "http://cp.cloudflare.com/generate_204",
-                     "interval": 1800,
+                     "interval": 300,
                      "proxies": []}
 
     # 防止name冲突， 缓存
@@ -173,7 +173,7 @@ def get_ikuuu_sub_yaml():
     yaml_conf = requests.get(url).text
     # 将 yaml_conf 转换为 yaml 对象
     yaml_object = yaml.load(yaml_conf, Loader=yaml.FullLoader)
-    autoselect_group = {"name": "auto_select", "type": "url-test", 'interval': 1800,
+    autoselect_group = {"name": "auto_select", "type": "url-test", 'interval': 300,
                         'url': 'http://cp.cloudflare.com/generate_204',
                         "proxies": [x.get('name') for x in yaml_object['proxies']]}
     yaml_object['proxy-groups'][0]['proxies'].append('auto_select')
