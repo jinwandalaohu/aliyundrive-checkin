@@ -163,7 +163,7 @@ proxy-groups:
   - 🔰 选择节点
   - DIRECT
   type: select
-- interval: 1800
+- interval: 300
   name: auto_select
   proxies:
   - 🇯🇵 免费-日本1-Ver.6
