@@ -66,7 +66,9 @@ def login_in_ikuuu(message_token: dict) -> requests.Session:
 def check_in(session: requests.Session) -> str:
     try:
         # 进行签到
-        result = json.loads(session.post(url=check_url, headers=header).text)
+        res_msg = session.post(url=check_url, headers=header).text
+        print(res_msg)
+        result = json.loads(res_msg)
         msg = result['msg']
         return msg
     except Exception as e:

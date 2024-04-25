@@ -20,6 +20,5 @@ def check_in(message_token: dict) -> str:
 
     message_all = '\n'.join(message_all)
     message_all = re.sub('\n+', '\n', message_all).rstrip('\n')
-
-    print('finish')
+    print(message_all)
     return message_all
