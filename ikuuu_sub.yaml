@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: xuo37-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: rugcx-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: tw7ex-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: ce980-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: r2l8q-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: 5fxtt-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: a0wfw-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: ar8m1-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: e8rw8-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: u8vng-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: cq5qd-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: dodfl-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -9664,8 +9664,6 @@ rules:
 - IP-CIDR6,fe80::/10,DIRECT,no-resolve
 - IP-CIDR6,fd00::/8,DIRECT,no-resolve
 - IP-CIDR,224.0.0.0/4,REJECT,no-resolve
-- DOMAIN-KEYWORD,adobe,REJECT
-- DOMAIN-KEYWORD,Adobe,REJECT
 - IP-CIDR,173.245.48.0/20,🌩️ Cloudflare
 - IP-CIDR,103.21.244.0/22,🌩️ Cloudflare
 - IP-CIDR,103.22.200.0/22,🌩️ Cloudflare
