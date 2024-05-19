@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: 4u3fg-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: utx7g-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: 46u9p-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: x71kq-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: vhuf9-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: eokob-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: x4nyk-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: yv3ld-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: ln611-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: ew6jf-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: ttrqv-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: j354f-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -7290,6 +7290,7 @@ rules:
 - DOMAIN,vz-5d293dac-178.b-cdn.net,🔰 选择节点
 - DOMAIN-SUFFIX,cangku.moe,🔰 选择节点
 - DOMAIN-SUFFIX,level-plus.net,🔰 选择节点
+- DOMAIN-SUFFIX,x.com,🔰 选择节点
 - DOMAIN,api-jooxtt.sanook.com,🔰 选择节点
 - DOMAIN-SUFFIX,airhorn.solutions,🔰 选择节点
 - DOMAIN-SUFFIX,airhornbot.com,🔰 选择节点
