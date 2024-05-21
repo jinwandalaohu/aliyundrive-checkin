@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: kzzu8-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: 3szkj-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: i67rp-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: puw5n-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: iqqv1-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: 4dcs3-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: endjp-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: ahvl8-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: c3gd2-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: 8fsyd-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: 2otjw-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 3b7wk-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -7291,6 +7291,15 @@ rules:
 - DOMAIN-SUFFIX,cangku.moe,🔰 选择节点
 - DOMAIN-SUFFIX,level-plus.net,🔰 选择节点
 - DOMAIN-SUFFIX,x.com,🔰 选择节点
+- DOMAIN-SUFFIX,ai.com,🔰 选择节点
+- DOMAIN-SUFFIX,openai.com,🔰 选择节点
+- DOMAIN-SUFFIX,chatgpt.com,🔰 选择节点
+- DOMAIN-SUFFIX,oaistatic.com,🔰 选择节点
+- DOMAIN-SUFFIX,oaiusercontent.com,🔰 选择节点
+- DOMAIN,chat.openai.com.cdn.cloudflare.net,🔰 选择节点
+- DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🔰 选择节点
+- DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔰 选择节点
+- DOMAIN,production-openaicom-storage.azureedge.net,🔰 选择节点
 - DOMAIN,api-jooxtt.sanook.com,🔰 选择节点
 - DOMAIN-SUFFIX,airhorn.solutions,🔰 选择节点
 - DOMAIN-SUFFIX,airhornbot.com,🔰 选择节点
