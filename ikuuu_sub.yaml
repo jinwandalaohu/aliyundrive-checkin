@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: kiup7-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: 9cyxs-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: 71yan-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: eoemo-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: oqydp-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: dwuq4-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: v9o2u-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: 3bqv3-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: i54uf-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: zogt6-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: ava3d-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 0b7qw-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -130,6 +130,7 @@ proxy-groups:
 - name: 🎮 Steam 商店/社区
   proxies:
   - 🔰 选择节点
+  - DIRECT
   type: select
 - name: 🌩️ Cloudflare
   proxies:
