@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: hc8la-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: erwui-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: qihrg-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: leqaz-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: 0dye9-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: dipup-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: ev0p1-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: 6y8rk-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: 3wycm-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: n47zd-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: v26l0-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: hm2jc-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: 08hau-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: htsre-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -293,6 +293,14 @@ rules:
 - DST-PORT,3306,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
+- DOMAIN-SUFFIX,dcg.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,download.windowsupdate.com,DIRECT
+- DOMAIN,cn.bing.com,DIRECT
+- DOMAIN,b.c2r.ts.cdn.office.net,DIRECT
+- DOMAIN,f.c2r.ts.cdn.office.net,DIRECT
+- DOMAIN,bg.v4.a.dl.ws.microsoft.com,DIRECT
+- DOMAIN,bg4.v4.a.dl.ws.microsoft.com,DIRECT
 - DOMAIN-SUFFIX,t.me,🔰 选择节点
 - DOMAIN-SUFFIX,tdesktop.com,🔰 选择节点
 - DOMAIN-SUFFIX,telegra.ph,🔰 选择节点
@@ -9707,31 +9715,5 @@ rules:
 - IP-CIDR,61.160.148.90/32,🔰 选择节点
 - GEOIP,CN,🇨🇳 国内网站
 - DOMAIN-KEYWORD,.,🐟 漏网之鱼
-- DOMAIN-KEYWORD,q,🐟 漏网之鱼
-- DOMAIN-KEYWORD,w,🐟 漏网之鱼
-- DOMAIN-KEYWORD,e,🐟 漏网之鱼
-- DOMAIN-KEYWORD,r,🐟 漏网之鱼
-- DOMAIN-KEYWORD,t,🐟 漏网之鱼
-- DOMAIN-KEYWORD,y,🐟 漏网之鱼
-- DOMAIN-KEYWORD,u,🐟 漏网之鱼
-- DOMAIN-KEYWORD,i,🐟 漏网之鱼
-- DOMAIN-KEYWORD,o,🐟 漏网之鱼
-- DOMAIN-KEYWORD,p,🐟 漏网之鱼
-- DOMAIN-KEYWORD,a,🐟 漏网之鱼
-- DOMAIN-KEYWORD,s,🐟 漏网之鱼
-- DOMAIN-KEYWORD,d,🐟 漏网之鱼
-- DOMAIN-KEYWORD,f,🐟 漏网之鱼
-- DOMAIN-KEYWORD,g,🐟 漏网之鱼
-- DOMAIN-KEYWORD,h,🐟 漏网之鱼
-- DOMAIN-KEYWORD,j,🐟 漏网之鱼
-- DOMAIN-KEYWORD,k,🐟 漏网之鱼
-- DOMAIN-KEYWORD,l,🐟 漏网之鱼
-- DOMAIN-KEYWORD,z,🐟 漏网之鱼
-- DOMAIN-KEYWORD,x,🐟 漏网之鱼
-- DOMAIN-KEYWORD,c,🐟 漏网之鱼
-- DOMAIN-KEYWORD,v,🐟 漏网之鱼
-- DOMAIN-KEYWORD,b,🐟 漏网之鱼
-- DOMAIN-KEYWORD,n,🐟 漏网之鱼
-- DOMAIN-KEYWORD,m,🐟 漏网之鱼
 - MATCH,🐟 漏网之鱼
 socks-port: 7891
