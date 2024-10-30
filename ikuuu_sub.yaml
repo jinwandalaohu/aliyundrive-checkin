@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: 0o2r2-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: h0cwu-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: ofuu0-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: wb0m4-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: 28b17-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: irmok-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: kkkqm-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: xjiha-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: ksnj2-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: f52jt-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: s4ya6-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: mg7i1-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: aevj9-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: re9rl-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -8041,6 +8041,10 @@ rules:
 - DOMAIN-SUFFIX,sda1.dev,🇨🇳 国内网站
 - DOMAIN-KEYWORD,ikandy,🇨🇳 国内网站
 - DOMAIN-SUFFIX,88mv.org,🇨🇳 国内网站
+- DOMAIN-SUFFIX,webofscience.com,🇨🇳 国内网站
+- DOMAIN-SUFFIX,sciencedirect.com,🇨🇳 国内网站
+- DOMAIN-SUFFIX,webofknowledge.com,🇨🇳 国内网站
+- DOMAIN-SUFFIX,clarivate.com,🇨🇳 国内网站
 - DOMAIN-SUFFIX,cn-north-4.myhuaweicloud.com,🇨🇳 国内网站
 - DOMAIN-SUFFIX,cn-north-1.myhuaweicloud.com,🇨🇳 国内网站
 - DOMAIN-SUFFIX,cn-north-9.myhuaweicloud.com,🇨🇳 国内网站
