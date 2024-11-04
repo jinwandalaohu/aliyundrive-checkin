@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: s8q1w-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: bx97q-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: vg434-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: q528o-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: tltcd-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: ff243-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: 6rynl-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: kf8wu-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: zj7el-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: rkc4y-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: xrgvh-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: lh4z9-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: p1xwz-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: ipwyw-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
