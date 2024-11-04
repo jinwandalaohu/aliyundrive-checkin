@@ -17,13 +17,13 @@ def allowed_gai_family():
 urllib3.util.connection.allowed_gai_family = allowed_gai_family
 
 # 会不定时更新域名，记得Sync fork
-login_url = 'https://ikuuu.pw/auth/login'
-check_url = 'https://ikuuu.pw/user/checkin'
-info_url = 'https://ikuuu.pw/user/profile'
-node_url = 'https://ikuuu.pw/user/node'
+login_url = 'https://ikuuu.one/auth/login'
+check_url = 'https://ikuuu.one/user/checkin'
+info_url = 'https://ikuuu.one/user/profile'
+node_url = 'https://ikuuu.one/user/node'
 free_url = "https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
 header = {
-    'origin': 'https://ikuuu.pw',
+    'origin': 'https://ikuuu.one',
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
 }
 success = 'OK'
