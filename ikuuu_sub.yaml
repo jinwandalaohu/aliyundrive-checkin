@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: yvmdf-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: 19qgu-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: mt8t8-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: 5iuqm-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: t5xas-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: jke8c-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: 95rzy-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: mjvgu-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: 57je4-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: y6jtx-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: o7krq-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 1z6x7-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: exnzt-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: 84za3-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -301,6 +301,16 @@ rules:
 - DOMAIN,f.c2r.ts.cdn.office.net,DIRECT
 - DOMAIN,bg.v4.a.dl.ws.microsoft.com,DIRECT
 - DOMAIN,bg4.v4.a.dl.ws.microsoft.com,DIRECT
+- DOMAIN,epicgames-download1.akamaized.net,DIRECT
+- DOMAIN,epicgames-download0.akamaized.net,DIRECT
+- DOMAIN,epicgames-download2.akamaized.net,DIRECT
+- DOMAIN,epicgames-download3.akamaized.net,DIRECT
+- DOMAIN,epicgames-download4.akamaized.net,DIRECT
+- DOMAIN,epicgames-download5.akamaized.net,DIRECT
+- DOMAIN,epicgames-download6.akamaized.net,DIRECT
+- DOMAIN,epicgames-download7.akamaized.net,DIRECT
+- DOMAIN,epicgames-download8.akamaized.net,DIRECT
+- DOMAIN,epicgames-download9.akamaized.net,DIRECT
 - DOMAIN-SUFFIX,t.me,🔰 选择节点
 - DOMAIN-SUFFIX,tdesktop.com,🔰 选择节点
 - DOMAIN-SUFFIX,telegra.ph,🔰 选择节点
@@ -8047,6 +8057,8 @@ rules:
 - DOMAIN-SUFFIX,clarivate.com,🇨🇳 国内网站
 - DOMAIN,worksaccs.atlassian.net,🇨🇳 国内网站
 - DOMAIN-SUFFIX,atlassian.com,🇨🇳 国内网站
+- DOMAIN-SUFFIX,wynd.network,🇨🇳 国内网站
+- DOMAIN-SUFFIX,getgrass.io,🇨🇳 国内网站
 - DOMAIN-SUFFIX,cn-north-4.myhuaweicloud.com,🇨🇳 国内网站
 - DOMAIN-SUFFIX,cn-north-1.myhuaweicloud.com,🇨🇳 国内网站
 - DOMAIN-SUFFIX,cn-north-9.myhuaweicloud.com,🇨🇳 国内网站
