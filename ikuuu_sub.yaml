@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: sab5c-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: npy50-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: tkni1-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: vsgwl-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: co67h-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: pqqzs-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: 1280x-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: e8vx0-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: f0lx9-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: wzffi-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: 9bjxh-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 39o9p-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: sdb71-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: 8c2gc-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -290,7 +290,7 @@ rules:
 - DST-PORT,993,DIRECT
 - DOMAIN-SUFFIX,office.com,DIRECT
 - DOMAIN,ocws.officeapps.live.com,DIRECT
-- DOMAIN,self.events.data.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,events.data.microsoft.com,DIRECT
 - DST-PORT,3306,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
@@ -7334,6 +7334,8 @@ rules:
 - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔰 选择节点
 - DOMAIN,production-openaicom-storage.azureedge.net,🔰 选择节点
 - DOMAIN-SUFFIX,sifangclub.com,🔰 选择节点
+- DOMAIN-SUFFIX,missav.ws,🔰 选择节点
+- DOMAIN-SUFFIX,missav.ai,🔰 选择节点
 - DOMAIN,api-jooxtt.sanook.com,🔰 选择节点
 - DOMAIN-SUFFIX,airhorn.solutions,🔰 选择节点
 - DOMAIN-SUFFIX,airhornbot.com,🔰 选择节点
@@ -9735,6 +9737,8 @@ rules:
 - IP-CIDR,131.0.72.0/22,🌩️ Cloudflare
 - IP-CIDR,61.160.148.90/32,🔰 选择节点
 - IP-CIDR,221.228.32.13/32,🔰 选择节点
+- IP-CIDR,106.74.25.198/32,🔰 选择节点
+- IP-CIDR,183.192.65.101/32,🔰 选择节点
 - GEOIP,CN,🇨🇳 国内网站
 - DOMAIN-KEYWORD,.,🐟 漏网之鱼
 - MATCH,🐟 漏网之鱼
