@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: s5vmh-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: wgu5j-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: cxbm4-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: f9auu-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: 6vjtn-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: iri4k-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: elx27-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: 2xtqn-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: 665nr-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: e8hc2-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: a3182-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: voalv-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: jg1c4-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: 37bhn-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -262,6 +262,7 @@ rules:
 - DOMAIN-SUFFIX,steamstatic.com,🎮 Steam 商店/社区
 - DOMAIN-SUFFIX,underlords.com,🎮 Steam 商店/社区
 - DOMAIN-SUFFIX,valvesoftware.com,🎮 Steam 商店/社区
+- DOMAIN-SUFFIX,steamusercontent.com,🎮 Steam 商店/社区
 - DOMAIN-KEYWORD,1drv,☁️ OneDrive
 - DOMAIN-KEYWORD,onedrive,☁️ OneDrive
 - DOMAIN-KEYWORD,skydrive,☁️ OneDrive
