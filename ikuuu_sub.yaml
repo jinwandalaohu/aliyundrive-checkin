@@ -45,7 +45,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本1-Ver.6
   port: 21584
-  server: ylgvf-g04.jp01-0986-vm0.entry.fr0307a.art
+  server: gsz1e-g04.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -55,7 +55,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本2-Ver.7
   port: 11776
-  server: x1hdc-g04.jp02-9a99-vm0.entry.fr0307a.art
+  server: ctvzi-g04.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,7 +65,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本3-Ver.6
   port: 21584
-  server: 4nhxj-g04.jp03-7d22-vm0.entry.fr0307a.art
+  server: mk3mg-g04.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -75,7 +75,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本4-Ver.7
   port: 447
-  server: vxait-g04.jp04-3771-vm0.entry.fr0307a.art
+  server: 7byni-g04.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -85,7 +85,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本5-Ver.8
   port: 46485
-  server: ttuim-g04.jp05-6786-vm0.entry.fr0307a.art
+  server: u4sth-g04.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -95,7 +95,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本6-Ver.7
   port: 28786
-  server: pvd85-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: wqutq-g04.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -105,7 +105,7 @@ proxies:
   cipher: auto
   name: 🇯🇵 免费-日本7-Ver.1
   port: 28786
-  server: cxqj7-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: ksvii-g04.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -159,6 +159,11 @@ proxy-groups:
   - 🇯🇵 免费-日本5-Ver.8
   - 🇯🇵 免费-日本6-Ver.7
   - 🇯🇵 免费-日本7-Ver.1
+  type: select
+- name: 🎓学术网站
+  proxies:
+  - DIRECT
+  - 🔰 选择节点
   type: select
 - name: 🇨🇳 国内网站
   proxies:
@@ -277,6 +282,23 @@ rules:
 - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,☁️ OneDrive
 - DOMAIN-SUFFIX,storage.live.com,☁️ OneDrive
 - DOMAIN-SUFFIX,storage.msn.com,☁️ OneDrive
+- DOMAIN-SUFFIX,webofscience.com,🎓学术网站
+- DOMAIN-SUFFIX,sciencedirect.com,🎓学术网站
+- DOMAIN-SUFFIX,webofknowledge.com,🎓学术网站
+- DOMAIN-SUFFIX,clarivate.com,🎓学术网站
+- DOMAIN-SUFFIX,taylorandfrancis.com,🎓学术网站
+- DOMAIN-SUFFIX,dl.acm.org,🎓学术网站
+- DOMAIN,acm-prod.disqus.com,🎓学术网站
+- DOMAIN-SUFFIX,sciencedirectassets.com,🎓学术网站
+- DOMAIN-SUFFIX,readspeaker.com,🎓学术网站
+- DOMAIN-SUFFIX,pubmed.ncbi.nlm.nih.gov,🎓学术网站
+- DOMAIN-SUFFIX,ieee.org,🎓学术网站
+- DOMAIN-SUFFIX,nature.com,🎓学术网站
+- DOMAIN-SUFFIX,elsevier.com,🎓学术网站
+- DOMAIN-SUFFIX,tandfonline.com,🎓学术网站
+- DOMAIN-SUFFIX,springer.com,🎓学术网站
+- DOMAIN-SUFFIX,onlinelibrary.wiley.com,🎓学术网站
+- DOMAIN-SUFFIX,taylorfrancis.com,🎓学术网站
 - DST-PORT,25,DIRECT
 - DST-PORT,57,DIRECT
 - DST-PORT,109,DIRECT
@@ -8055,10 +8077,6 @@ rules:
 - DOMAIN-SUFFIX,sda1.dev,🇨🇳 国内网站
 - DOMAIN-KEYWORD,ikandy,🇨🇳 国内网站
 - DOMAIN-SUFFIX,88mv.org,🇨🇳 国内网站
-- DOMAIN-SUFFIX,webofscience.com,🇨🇳 国内网站
-- DOMAIN-SUFFIX,sciencedirect.com,🇨🇳 国内网站
-- DOMAIN-SUFFIX,webofknowledge.com,🇨🇳 国内网站
-- DOMAIN-SUFFIX,clarivate.com,🇨🇳 国内网站
 - DOMAIN,worksaccs.atlassian.net,🇨🇳 国内网站
 - DOMAIN-SUFFIX,atlassian.com,🇨🇳 国内网站
 - DOMAIN-SUFFIX,wynd.network,🇨🇳 国内网站
